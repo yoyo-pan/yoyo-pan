@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="HQOC 金鼎财富" />
@@ -166,7 +166,7 @@
               买分模式下，如果银商承担司法风险，点位高达1.0%以上。
             </div>
           </div>
-          <img style="width: 99%" src="assets/join_us.png" alt="joinus" />
+          <img style="width: 100%" src="assets/join_us.png" alt="joinus" />
         </div>
       </section>
       <!-- end of section 4 -->
@@ -222,8 +222,9 @@
     }
 
     function calculateNavigatorPosition() {
+      if (window.scrollY > 4600) return
       var navigator = document.getElementsByClassName("navigator")[0]
-      navigator.style.top = `calc(45vh + ${window.scrollY}px)`
+      navigator.style.top = `calc(40vh + ${window.scrollY}px)`
     }
 
     window.onload = function () {

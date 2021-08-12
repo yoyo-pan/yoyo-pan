@@ -40,6 +40,13 @@ section {
   z-index: 10;
 }
 
+/* 900px down */
+@media only screen and (max-width: 900px) {
+  .navigator {
+    right: 10px;
+  }
+}
+
 .close-btn {
   position: absolute;
   top: -39px;
