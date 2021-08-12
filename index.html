@@ -17,9 +17,45 @@
     <title>HQOC 金鼎财富</title>
   </head>
   <body>
+    <!-- navigator -->
+    <div class="navigator">
+      <img class="close-btn" src="assets/close@2x.png" alt="close" />
+      <a href="#section-1">01龙头的实力<img src="assets/click.png" alt="click" /></a>
+      <div class="vertical-border">
+        <span></span>
+        <span></span>
+      </div>
+      <a href="#section-2">02创新的技术<img src="assets/click.png" alt="click" /></a>
+      <div class="vertical-border">
+        <span></span>
+        <span></span>
+      </div>
+      <a href="#section-3">03安全的流水<img src="assets/click.png" alt="click" /></a>
+      <div class="vertical-border">
+        <span></span>
+        <span></span>
+      </div>
+      <a href="#section-4">04财富的自由<img src="assets/click.png" alt="click" /></a>
+      <div class="vertical-border">
+        <span></span>
+        <span></span>
+      </div>
+      <a href="#footer" class="contact-us">联系我们<img src="assets/click.png" alt="click" /></a>
+      <div class="vertical-border">
+        <span></span>
+        <span></span>
+      </div>
+      <a href="#section-top" class="back-to-top"
+        >返回顶部<img src="assets/back-to-top.png" alt="back"
+      /></a>
+    </div>
+    <!-- end of navigator -->
     <main>
+      <a id="section-top"></a>
       <img class="banner" src="assets/banner.png" alt="banner" />
+      <!-- section 1 -->
       <section class="section-1">
+        <a id="section-1"></a>
         <img class="arrow" src="assets/arrow.png" alt="arrow" />
         <div class="container">
           <img class="title-1-img" src="assets/title-1.png" alt="title-1" />
@@ -43,13 +79,15 @@
               <div>
                 本公司已在多彩联盟背书，实缴纳500万信誉押金；多彩联盟作为驰名彩票联盟，已为众多大平台同时做信任背书，包括彩票龙头杏彩娱乐，摩臣娱乐等
               </div>
-              <button class="enter-btn">点击进入多采联盟</button>
+              <a class="enter-btn" href="http://www.manycai.club/">点击进入多彩联盟</a>
             </div>
           </div>
         </div>
       </section>
-
+      <!-- end of section 1 -->
+      <!-- section 2 -->
       <section class="section-2">
+        <a id="section-2"></a>
         <img class="arrow" src="assets/arrow.png" alt="arrow" />
         <div class="container">
           <img class="title-2-img" src="assets/title-2.png" alt="title-2" />
@@ -88,8 +126,10 @@
           </div>
         </div>
       </section>
-
+      <!-- end of section 2 -->
+      <!-- section 3 -->
       <section class="section-3">
+        <a id="section-3"></a>
         <img class="arrow" src="assets/arrow.png" alt="arrow" />
         <div class="container">
           <img class="title-3-img" src="assets/title-3.png" alt="title-3" />
@@ -105,8 +145,10 @@
           <div class="bottom-right">同时可以使用虚拟币发放代替人民币结算</div>
         </div>
       </section>
-
+      <!-- end of section 3 -->
+      <!-- section 4 -->
       <section class="section-4">
+        <a id="section-4"></a>
         <img class="arrow" src="assets/arrow.png" alt="arrow" />
         <div class="container">
           <img class="title-4-img" src="assets/title-4.png" alt="title-4" />
@@ -127,8 +169,10 @@
           <img style="width: 99%" src="assets/join_us.png" alt="joinus" />
         </div>
       </section>
-
+      <!-- end of section 4 -->
+      <!-- footer -->
       <footer>
+        <a id="footer"></a>
         <div class="container">
           <div class="footer-slogan">加入我们 <span class="join-us">JOIN US</span></div>
           <div class="footer-contact-container">
@@ -158,6 +202,7 @@
           <div class="copyright">Copyright © 2020-2021 金鼎财富 版权所有</div>
         </div>
       </footer>
+      <!-- end of footer -->
     </main>
   </body>
 
@@ -170,15 +215,32 @@
         document.querySelector("main").style.transformOrigin = "top left"
         var scaledHeight = document.querySelector("main").getBoundingClientRect().height
         document.body.style.height = scaledHeight + "px"
+        var navigator = document.getElementsByClassName("navigator")[0]
+        navigator.style.transform = "scale(" + scale + ")"
+        navigator.style.transformOrigin = "top right"
       }
+    }
+
+    function calculateNavigatorPosition() {
+      var navigator = document.getElementsByClassName("navigator")[0]
+      navigator.style.top = `calc(45vh + ${window.scrollY}px)`
     }
 
     window.onload = function () {
       scaleBody()
+      calculateNavigatorPosition()
     }
 
     window.addEventListener("resize", function () {
       scaleBody()
+    })
+
+    window.addEventListener("scroll", function () {
+      calculateNavigatorPosition()
+    })
+
+    document.getElementsByClassName("close-btn")[0].addEventListener("click", function () {
+      document.getElementsByClassName("navigator")[0].style.display = "none"
     })
   </script>
 </html>

@@ -3,8 +3,10 @@ footer {
   background-image: url(../assets/bg_footer@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 552px;
   padding: 68px 0px 43px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-slogan {

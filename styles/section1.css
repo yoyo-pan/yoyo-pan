@@ -52,4 +52,10 @@
   background-size: cover;
   border: none;
   margin-top: 54px;
+  font-size: 32px;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
