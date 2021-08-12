@@ -1,0 +1,45 @@
+.section-3 {
+  background-image: url(../assets/bg_03@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 24px;
+  font-weight: 400;
+  color: #e6e6e6;
+  line-height: 44px;
+  padding: 57px 30px 131px;
+  height: 1047px;
+}
+
+.title-3-img {
+  width: 1107px;
+  padding-left: calc(50% - 553px);
+  display: block;
+}
+
+.top-left {
+  position: absolute;
+  top: 315px;
+  left: 336px;
+  width: 275px;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 555px;
+  left: 291px;
+  width: 226px;
+}
+
+.top-right {
+  position: absolute;
+  top: 315px;
+  left: 1319px;
+  width: 274px;
+}
+
+.bottom-right {
+  position: absolute;
+  top: 608px;
+  left: 1416px;
+  width: 226px;
+}
