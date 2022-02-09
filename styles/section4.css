@@ -1,0 +1,23 @@
+.section4 {
+  background: url("../assets/section4.png") no-repeat;
+  height: 501px;
+  display: flex;
+  justify-content: center;
+}
+
+.section4 > .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.section4-qrcode {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 31px;
+}

@@ -1,0 +1,41 @@
+.section1 {
+  background: url("../assets/section1.png") no-repeat;
+  background-size: cover;
+  height: 1023px;
+  padding-top: 200px;
+}
+
+.section1-h2 {
+  font-size: 72px;
+  color: #303030;
+  font-weight: 400;
+  font-family: impact;
+  margin-top: 0;
+}
+
+.section1-text {
+  font-size: 32px;
+  color: #303030;
+  font-family: "Arial Rounded MT Bold";
+  font-weight: bold;
+  margin-bottom: 36px;
+}
+
+.section1-img {
+  margin-left: 189px;
+  margin-top: 108px;
+  margin-bottom: 46px;
+}
+
+.section1-img-text {
+  font-size: 28px;
+  font-family: Impact;
+  font-weight: bold;
+  color: #303030;
+}
+
+.section1-business-img {
+  position: absolute;
+  right: 26px;
+  bottom: 134px;
+}

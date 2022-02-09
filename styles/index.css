@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+.header {
+  width: 1920px;
+  background: rgb(31, 42, 53);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.header > .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 1200px;
+}
+
+.logo {
+  margin-right: 243px;
+}
+
+.menu-link {
+  margin-left: 70px;
+}

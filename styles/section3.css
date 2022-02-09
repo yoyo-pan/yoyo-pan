@@ -1,0 +1,35 @@
+.section3 {
+  background: url("../assets/section3.png") no-repeat;
+  background-size: cover;
+  height: 829px;
+  padding-top: 129px;
+}
+
+.section3-title {
+  font-size: 48px;
+  font-family: Helvetica;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 60px;
+  background: url("../assets/contact_us_bar.png") no-repeat;
+  background-position-y: bottom;
+  margin-bottom: 46px;
+}
+
+.section3-image {
+  position: absolute;
+  left: 0px;
+  top: 302px;
+}
+
+.section3 > .wrapper {
+  padding-left: 640px;
+}
+
+.section3-text {
+  font-size: 24px;
+  font-family: STHeiti;
+  font-weight: 400;
+  color: #303030;
+  line-height: 60px;
+}

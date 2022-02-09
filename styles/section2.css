@@ -1,0 +1,37 @@
+.section2 {
+  background: rgb(222, 233, 252);
+}
+
+.section2-title {
+  font-size: 52px;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 52px;
+}
+
+.section2-title > span {
+  margin: 0 30px;
+}
+
+.section2-title-img {
+  margin: 58px auto 0px;
+}
+
+.section2-text {
+  font-size: 24px;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  color: #0c0c0c;
+  line-height: 60px;
+  margin: 65px 0px;
+}
+
+.section2-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
